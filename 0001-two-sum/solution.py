@@ -1,9 +1,14 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        for x in range(len(nums)):
-            for y in range(x+1,len(nums)):
-                if target == (nums[x] + nums[y]):
-                    return (x,y)
-                
         
+        for i in range(0, len(nums)):
+            for j in range (0, len(nums)):
+                num = nums[i] + nums[j]
+                if num == target and i != j:
+                    return(i,j)
+                
+                    
+
+
+
         
